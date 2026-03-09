@@ -21,7 +21,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(process.cwd(), "views"));
 
 app.get("/", (req, res) => {
-    res.send("Student Management App Running");
+    res.send("Student Management API is running");
 });
 
 app.use("/students", studentRoutes);
