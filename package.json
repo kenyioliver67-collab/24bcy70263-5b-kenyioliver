@@ -1,0 +1,24 @@
+{
+    "name": "24bcy70263-5b-kenyioliver",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.29.3",
+    "dependencies": {
+        "cors": "^2.8.6",
+        "dotenv": "^17.3.1",
+        "ejs": "^5.0.1",
+        "express": "^5.2.1",
+        "mongoose": "^9.2.4"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14"
+    }
+}

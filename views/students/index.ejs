@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Management System</title>
+</head>
+
+<body>
+
+    <h1>Student Management System</h1>
+
+    <h2>Add Student</h2>
+
+    <form action="/view/students" method="POST">
+        <input type="text" name="name" placeholder="Student Name" required>
+        <input type="number" name="roll" placeholder="Roll Number" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Students List</h2>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Actions</th>
+        </tr>
+
+        <% students.forEach(student => { %>
+
+            <tr>
+                <td>
+                    <%= student.name %>
+                </td>
+                <td>
+                    <%= student.roll %>
+                </td>
+
+                <td>
+                    <a href="/view/students/edit/<%= student._id %>">Edit</a>
+                    <a href="/view/students/delete/<%= student._id %>">Delete</a>
+                </td>
+
+            </tr>
+
+            <% }) %>
+
+    </table>
+
+</body>
+
+</html>
