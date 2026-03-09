@@ -20,6 +20,10 @@ app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.set("views", path.join(process.cwd(), "views"));
 
+app.get("/", (req, res) => {
+    res.send("Student Management App Running");
+});
+
 app.use("/students", studentRoutes);
 app.use("/view/students", studentViewRoutes);
 
