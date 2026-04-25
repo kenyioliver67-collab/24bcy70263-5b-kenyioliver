@@ -125,8 +125,8 @@ Base URL: `http://localhost:3000/students`
 - **DELETE** `/students/:id`
 
 Validation highlights:
-- `name`: DRAMANE TRAORE
-- `roll`: 24BCY70270
+- `name`: kenyi oliver
+- `roll`: 24BCY70263
 
 ---
 
